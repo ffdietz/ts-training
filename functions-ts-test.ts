@@ -1,5 +1,5 @@
-import { arrayMutate, createAdder, newArrayMutate } from "./funcs-and-funcs";
-import addNumbers, { getName } from "./functions";
+import { arrayMutate, createAdder, newArrayMutate } from "./cap03_ funcs-and-funcs";
+import addNumbers, { getName } from "./cap02_ functions";
 
 /* to run
  npx ts-node functions-ts-test.ts
