@@ -19,9 +19,9 @@ export const printFormat = (title: string, param: string | number): void => {
 };
 
 // return Promise
-// export const fetchData = (url: string): Promise<string> =>
-// //in case of Promise type error, change tsconfig.json to '"target": "esnext"'
-//   Promise.resolve(`Data from ${url}`);
+export const fetchData = (url: string): Promise<string> =>
+//in case of Promise type error, change tsconfig.json to '"target": "esnext"'
+  Promise.resolve(`Data from ${url}`);
 
 // rest parameters
 function introduce(salutation: string, ...names: string[]): string {

@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.getName = exports.printFormat = exports.format = exports.addStrings = void 0;
+exports.getName = exports.fetchData = exports.printFormat = exports.format = exports.addStrings = void 0;
 //defines the parameters types and the return types
 function addNumbers(a, b) {
     return a + b;
@@ -23,9 +23,11 @@ var printFormat = function (title, param) {
 };
 exports.printFormat = printFormat;
 // return Promise
-// export const fetchData = (url: string): Promise<string> =>
-// //in case of Promise type error, change tsconfig.json to '"target": "esnext"'
-//   Promise.resolve(`Data from ${url}`);
+var fetchData = function (url) {
+    //in case of Promise type error, change tsconfig.json to '"target": "esnext"'
+    return Promise.resolve("Data from ".concat(url));
+};
+exports.fetchData = fetchData;
 // rest parameters
 function introduce(salutation) {
     var names = [];
