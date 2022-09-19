@@ -1,5 +1,5 @@
-// https://youtu.be/LKVHFHJsiO0
-// Typescript Setup & Everyday Types
+// cap01 TYPESCRIPT SETUP & EVERYDAY TYPES
+//// https://youtu.be/LKVHFHJsiO0
 
 let userName: string  = "Felipe";
 let loggedIn: boolean = true;

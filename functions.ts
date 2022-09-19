@@ -1,3 +1,6 @@
+// cap02 FUNCTIONS
+//// https://youtu.be/-TsIUuA3yyE
+
 //defines the parameters types and the return types
 function addNumbers(a: number, b: number): number {
   return a + b
