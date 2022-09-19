@@ -55,5 +55,5 @@ for (let i: number = 0; i < 10; i++){
 
 [1, 2, 3].forEach((v) => console.log('v: ', v));
 // defining a number array doesn't allow add string elements
-const out: number = [4, 5, 6].map((v) => v * 10);
+const out: number[] = [4, 5, 6].map((v) => v * 10);
 // const out: number = [4, 5, 6].map((v) => `${v * 10}`);
