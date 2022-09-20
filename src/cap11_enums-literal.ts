@@ -25,10 +25,10 @@ console.log('rollDice()', rollDice(3));
 
 
 // Overloading a function with literal types
-function sendEvent(name: "addToCart", data: {productId: number}): void;
-function sendEvent(name: "checkout", data: {cartCount: number}): void;
-function sendEvent(name: string, data: unknown): void{
+function sendthisEvent(name: "addToCart", data: {productId: number}): void;
+function sendthisEvent(name: "checkout", data: {cartCount: number}): void;
+function sendthisEvent(name: string, data: unknown): void{
   console.log(`${name}: ${JSON.stringify(data)}`)
 }
 
-sendEvent("addToCart", { productId: 12345 }); // 'addToCart' parameter type only accept 'productId' type
+sendthisEvent("addToCart", { productId: 12345 }); // 'addToCart' parameter type only accept 'productId' type
