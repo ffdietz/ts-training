@@ -27,6 +27,7 @@ function simpleStringState(initial: string): [() => string, (v: string) => void]
 
 const [str1getter, str1setter] = simpleStringState("hello");
 const [str2getter, str2setter] = simpleStringState("felipe");
+
 console.log('str1getter()', str1getter());
 console.log('str2getter()', str2getter());
 str1setter("goodbye");

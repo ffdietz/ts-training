@@ -1,11 +1,13 @@
 "use strict";
-exports.__esModule = true;
+// cap02 FUNCTIONS
+//// https://youtu.be/-TsIUuA3yyE
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getName = exports.fetchData = exports.printFormat = exports.format = exports.addStrings = void 0;
 //defines the parameters types and the return types
 function addNumbers(a, b) {
     return a + b;
 }
-exports["default"] = addNumbers;
+exports.default = addNumbers;
 //default params
 var addStrings = function (str1, str2) {
     if (str2 === void 0) { str2 = ""; }
