@@ -1,6 +1,5 @@
-// cap12 CLASSES
-//// https://youtu.be/PbswZshAKF8
-
+// // cap12 CLASSES
+// //// https://youtu.be/PbswZshAKF8
 
 // Similar as struct in C++, first declare then implements
 interface Database {
