@@ -11,7 +11,7 @@ const logger = myLogFunction();
 logger("test");
 
 function createLoggerClass() {
-  return class MyLogger{
+  return class MyLogger {
     private completeLog: string = "";
     log(str: string) {
       console.log(str);
@@ -29,7 +29,7 @@ logger2.log("Foo");
 console.log(logger2.dumpLog());
 
 function CreateSimpleMemoryDatabase<T>() {
-  return class CreateSimpleMemoryDatabase{
+  return class CreateSimpleMemoryDatabase {
     private db: Record<string, T> = {};
     set(id: string, value: T) {
       this.db[id] = value;
@@ -53,10 +53,10 @@ type Constructor<T> = new (...args: any[]) => T;
 function Dumpable<
   //Type T extends to Constructor
   T extends Constructor<{
-  // Constructor creates an object and must get object
-  getObject(): object;
+    // Constructor creates an object and must get object
+    getObject(): object;
   }>
-  //function Dumplable receive Base:T as a parameter
+//function Dumplable receive Base:T as a parameter
 >(Base: T) {
   return class Dumpable extends Base {
     dump() {

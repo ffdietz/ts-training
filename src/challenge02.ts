@@ -1,28 +1,28 @@
-// challenge02
-//// https://youtu.be/DxG17pbgsZg
+// // // challenge02
+// // //// https://youtu.be/DxG17pbgsZg
 
-// re-implement forEach, map and filter using reduce
-function myForEach<T>(items: T[], forEachFunc: (v: T) => void): void {
-  items.reduce((a, v) => {
-    forEachFunc(v);
-    return undefined;
-  }, undefined);
-}
+// // re-implement forEach, map and filter using reduce
+// function myForEach<T>(items: T[], forEachFunc: (v: T) => void): void {
+//   items.reduce((a, v) => {
+//     forEachFunc(v);
+//     return undefined;
+//   }, undefined);
+// }
 
-myForEach(['a', 'b', 'c'], (v) => console.log(`forEach ${v}`));
-
-
-
-function myFilter<T>(items: T[], filterFunc: (v: T) => boolean): T[]{
-  return items.reduce((a, v) => (filterFunc(v) ? [...a, v]: a), [] as T[])
-}
-
-console.log('myFilter() >> ', myFilter([1, 2, 3, 4, 5, 6, 7, 8, 9], (v) => v % 2 === 0));
+// myForEach(['a', 'b', 'c'], (v) => console.log(`forEach ${v}`));
 
 
 
-function myMap<T, K>(items: T[], mapFunc: (v: T) => K): K[]{
-  return items.reduce((a, v) => [...a, mapFunc(v)], [] as K[])
-}
+// function myFilter<T>(items: T[], filterFunc: (v: T) => boolean): T[]{
+//   return items.reduce((a, v) => (filterFunc(v) ? [...a, v]: a), [] as T[])
+// }
 
-console.log('myMap() >> ', myMap([1, 2, 3, 4, 5, 6, 7, 8, 9], (v) => (v*10).toString()));
+// console.log('myFilter() >> ', myFilter([1, 2, 3, 4, 5, 6, 7, 8, 9], (v) => v % 2 === 0));
+
+
+
+// function myMap<T, K>(items: T[], mapFunc: (v: T) => K): K[]{
+//   return items.reduce((a, v) => [...a, mapFunc(v)], [] as K[])
+// }
+
+// console.log('myMap() >> ', myMap([1, 2, 3, 4, 5, 6, 7, 8, 9], (v) => (v*10).toString()));
