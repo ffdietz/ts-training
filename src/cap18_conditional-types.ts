@@ -1,6 +1,10 @@
 // cap18 Conditional Types
 //// https://youtu.be/jdzLpEnRAqg
 
+//"type": "module" in package.json
+//"module": "es6" in tsconfig.json 
+//run command npx ts-node-esm cap18_conditional-types.ts
+
 import fetch from "node-fetch"
 
 interface PokemonResults {
