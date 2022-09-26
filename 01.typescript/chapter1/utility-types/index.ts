@@ -117,8 +117,8 @@ type itsParams = Parameters<typeof someFunction>
 
 
 /* ConstructorParameters<Type> */// return a tuple or array type from the types of a constructor function type.
-class someClass{  
-  constructor(public constructorParam: string){}
+class someClass {
+  constructor(public constructorParam: string) { }
   someInstance: boolean;
 }
 
